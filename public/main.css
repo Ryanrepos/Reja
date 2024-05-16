@@ -5,7 +5,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     background: #e5e5e5;
 }
 
@@ -32,12 +32,12 @@
 .main_frame .midd_frame {
     position: relative;
     width: 970px;
-    height: 1259px;
+    height: 1315px;
     margin-left: 30px;
     margin-right: 27px;
     display: flex;
     flex-direction: column;
-    /* background-color: red; */
+    justify-content: space-around;
 }
 
 .main_frame .right_frame {

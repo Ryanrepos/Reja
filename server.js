@@ -4,9 +4,9 @@ const { log } = require("console");
 // 📌📌📌  EXPRESS  📌📌📌
 
 const express = require("express");
-const app = express();   // instance yasab olamz, express dan foydalanish uchun!
-const res = require("express/lib/response");
-const http = require("http");
+const app     = express();   // instance yasab olamz, express dan foydalanish uchun!
+const res     = require("express/lib/response");
+const http    = require("http");
 
 const fs = require("fs");
 
