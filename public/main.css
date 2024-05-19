@@ -12,7 +12,7 @@
 .frame .main_frame{
     position: relative;
     width: 1440px;
-    height: 1312px;
+    height: 1315px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -55,7 +55,7 @@
 .main_frame .left_1 {
     position: relative;
     width: 228px;
-    height: 267px;
+    height: 220px;
     margin-top: 50px;
     margin-left: 37px;
     display: flex;
@@ -164,7 +164,7 @@
 .main_frame .left_2 {
     position: relative;
     width: 221px;
-    height: 190px;
+    height: 160px;
     margin-left: 44px;
     display: flex;
     flex-direction: column;
@@ -345,7 +345,7 @@
 .main_frame .left_frame .left_3 {
     position: relative;
     width: 220px;
-    height: 180px;
+    height: 150px;
     margin-top: 15px;
     margin-left: 45px;
     display: flex;
@@ -495,13 +495,14 @@
 
 .main_frame .left_frame .left_4 {
     position: relative;
-    width: 220px;
-    /* height: 180px; */
+    width: 230px;
+    height: 220px;
     margin-top: 15px;
     margin-left: 45px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* background-color: aqua; */
 }
 
 .left_frame .left_3 .left_4-1 {
@@ -777,7 +778,7 @@
 .main_frame .left_frame .left_5 {
     position: relative;
     width: 220px;
-    /* height: 153px; */
+    height: 100px;
     margin-top: 25px;
     margin-left: 45px;
     /* background-color: aqua; */
