@@ -4,8 +4,8 @@
     height: 100%;
     position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /* flex-direction: row; */
+    justify-content: center;
     background: #e5e5e5;
 }
 
@@ -27,6 +27,8 @@
     background-color: white;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    /* background-color: green; */
 }
 
 .main_frame .midd_frame {
@@ -55,12 +57,12 @@
 .main_frame .left_1 {
     position: relative;
     width: 228px;
-    height: 220px;
+    height: 223px;
     margin-top: 50px;
     margin-left: 37px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     /* background-color: aqua; */
 }
@@ -70,8 +72,7 @@
     flex-direction: column;
     position: relative;
     width: 156.16px;
-    height: 142.53px;
-    margin-bottom: 29.46px;
+    height: 135.05px;
     object-fit: cover;
 }
 
@@ -112,7 +113,7 @@
 .main_frame .left_1 .left_1-3{
     position: relative;
     width: 147.84px;
-    height: 25.65px;
+    height: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,7 +136,8 @@
     flex-direction: row;
     justify-content: space-between;
     width: 238px;
-    margin-top: 19px;
+    height: 22px;
+    /* margin-top: 19px; */
 }
 
 .link_href {
@@ -164,180 +166,31 @@
 .main_frame .left_2 {
     position: relative;
     width: 221px;
-    height: 160px;
-    margin-left: 44px;
+    height: 126px;
+    margin-left: 37px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 5px;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .main_frame .left_2 .left_2-1 {
     position: relative;
+    width: 220px;
+    height: 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 220px;
-    height: 30px;
-    margin-left: 0px;
-    margin-right: 10px;
-    align-items: center;
-}
-
-.left_2-1 .age {
-    position: relative;
-    width: 45.63px;
-    /* height: 20.9px; */
-    margin-bottom: 6.65px;
     text-align: center;
-
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20.6%;
-    background-color: orange
-
+    /* align-items: center; */
 }
 
-.left_2-1 .age_number {
-    position: relative;
-    width: 66.63px;
-    height: 20.9px;
-    margin-bottom: 6.65px;
-    text-align: right;
-
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 123.6%;
-}
-
-.main_frame .left_2 .left_2-2 {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 220px;
-    height: 50px;
-    margin-left: 0px;
-
-    margin-right: 10px;
-    align-items: center;
-}
-
-.left_2-2 .residence {
-    position: relative;
-    width: 85.63px;
-    /* height: 20.9px; */
-    margin-bottom: 6.65px;
-    text-align: center;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 30.6%;
-    background-color: orange
-}
-
-.left_2-2 .residence_location {
-    position: relative;
-    width: 66.63px;
-    height: 20.9px;
-    margin-bottom: 6.65px;
-    text-align: right;
-
-
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 123.6%;
-}
-
-.main_frame .left_2 .left_2-3 {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 220px;
-    height: 50px;
-    margin-left: 0px;
-    margin-right: 10px;
-    align-items: center;
-}
-
-.left_2-3 .freelance {
-    position: relative;
-    width: 80px;
-    /* height: 20.9px; */
-    margin-bottom: 6.65px;
-    text-align: center;
-
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 30.6%;
-    background-color: orange
-}
-
-.left_2-3 .freelance_availability {
-    position: relative;
-    width: 130.63px;
-    height: 20.9px;
-    margin-bottom: 6.65px;
-    text-align: right;
+.freelance_availability{
     color: green;
-
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 123.6%;
 }
 
-.main_frame .left_2 .left_2-4 {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 220px;
-    height: 50px;
-    margin-left: 0px;
-    margin-right: 10px;
-    align-items: center;
-}
-
-.left_2-4 .address{
-    position: relative;
-    width: 70px;
-    /* height: 20.9px; */
-    margin-bottom: 6.65px;
-    text-align: center;
-
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 30.6%;
-    background-color: orange
-}
-
-.left_2-4 .address_location {
-    position: relative;
-    width: 130.63px;
-    height: 20.9px;
-    margin-bottom: 6.65px;
-    text-align: right;
-
-
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 123.6%;
+.color-left-2 {
+    background-color: orange;
 }
 
                                             /* 📌📌📌 Language section */
@@ -345,12 +198,16 @@
 .main_frame .left_frame .left_3 {
     position: relative;
     width: 220px;
-    height: 150px;
-    margin-top: 15px;
-    margin-left: 45px;
+    height: 153px;
+    margin-left: 37px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.left_3-line {
+    height: 6px;
+
 }
 
 .left_frame .left_3 .left_3-1 {
@@ -498,7 +355,7 @@
     width: 230px;
     height: 220px;
     margin-top: 15px;
-    margin-left: 45px;
+    margin-left: 37px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -780,7 +637,7 @@
     width: 220px;
     height: 100px;
     margin-top: 25px;
-    margin-left: 45px;
+    margin-left: 37px;
     /* background-color: aqua; */
     display: flex;
     flex-direction: column;
