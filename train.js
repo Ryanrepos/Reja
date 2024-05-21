@@ -124,4 +124,26 @@ async function maslahatBering(a) {
 // }
 
 
+// 📌📌📌 MITASK-A
 
+function countLetter(harf, soz) {
+    let count = 0;
+    let index = 0;
+    
+    while (index < soz.length) {
+        if (soz[index] === harf) {
+            count++;
+        }
+        index++;
+    }
+    
+    return count;
+}
+
+
+
+console.log(countLetter("e", "handphone"));     // bu holatda 1 ni qaytaradi
+console.log(countLetter("a", "lightweight"));   // bu holatda esa 0 ni qaytaradi sababi a ishtirok etmagan
+console.log(countLetter("o", "macbook"));       // bunda esa macbook so'zida ikkita o bo'lgani uchun 2 qaytaradi funksiyamz!
+
+// 📌 funksiyamizni npm run train kamandasi orqali ishga tushirb olamz!
