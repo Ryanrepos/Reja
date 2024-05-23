@@ -125,7 +125,7 @@ async function maslahatBering(a) {
 
 
 // 📌📌📌 MITASK-A
-
+/*
 function countLetter(harf, soz) {
     let count = 0;
     let index = 0;
@@ -147,3 +147,22 @@ console.log(countLetter("a", "lightweight"));   // bu holatda esa 0 ni qaytaradi
 console.log(countLetter("o", "macbook"));       // bunda esa macbook so'zida ikkita o bo'lgani uchun 2 qaytaradi funksiyamz!
 
 // 📌 funksiyamizni npm run train kamandasi orqali ishga tushirb olamz!
+
+*/
+
+// 📌📌📌 MITASK-B
+
+function hisoblang(abc) {
+    var raqamlar = 0;
+
+    for(let string of abc) {
+        if(!isNaN(parseInt(string))) {
+            raqamlar++;
+        }
+    }
+    return raqamlar;
+}
+
+console.log(hisoblang("seund8j3b3"));  // Bu funksiyamiz 3 qaytaradi bu holatda
+
+// RUN - npm run train
