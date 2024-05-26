@@ -11,8 +11,15 @@
       crossorigin="anonymous"
     />
     <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
       .container {
-        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -25,11 +32,12 @@
       }
 
       #item-list {
-        width: 800px;
+        width: 80%;
+        overflow-y: auto;
       }
 
       .jumbotron {
-        width: 800px;
+        width: 80%;
       }
     </style>
   </head>
