@@ -150,6 +150,7 @@ console.log(countLetter("o", "macbook"));       // bunda esa macbook so'zida ikk
 
 */
 
+/*
 // 📌📌📌 MITASK-B
 
 function hisoblang(abc) {
@@ -166,3 +167,57 @@ function hisoblang(abc) {
 console.log(hisoblang("seund8j3b3"));  // Bu funksiyamiz 3 qaytaradi bu holatda
 
 // RUN - npm run train
+
+*/
+
+// 📌📌📌 MITASK-C
+
+class Shop {
+    constructor(olma, banan, uzum) {
+      this.olma = olma;
+      this.banan = banan;
+      this.uzum = uzum;
+    }
+  
+    qoldiq() {
+      const now = new Date();
+      console.log(`Hozir dokonda ${now.getHours()}:${now.getMinutes()}da ${this.olma}ta olma, ${this.banan}ta banan va ${this.uzum}ta uzum mavjud!`);
+    }
+  
+    sotish(mahsulot, miqdor) {
+      if (mahsulot === 'olma') {
+        this.olma -= miqdor;
+      } else if (mahsulot === 'banan') {
+        this.banan -= miqdor;
+      } else if (mahsulot === 'uzum') {
+        this.uzum -= miqdor;
+      } else {
+        console.log('Noto‘g‘ri mahsulot nomi!');
+        return;
+      }
+      console.log(`Siz ${miqdor}ta ${mahsulot} sotdingiz.`);
+    }
+  
+    qabul(mahsulot, miqdor) {
+      if (mahsulot === 'olma') {
+        this.olma += miqdor;
+      } else if (mahsulot === 'banan') {
+        this.banan += miqdor;
+      } else if (mahsulot === 'uzum') {
+        this.uzum += miqdor;
+      } else {
+        console.log('Noto‘g‘ri mahsulot nomi!');
+        return;
+      }
+      console.log(`Siz ${miqdor}ta ${mahsulot} qabul qildingiz.`);
+    }
+  }
+  
+  const shop = new Shop(10, 20, 30);
+  shop.qoldiq();
+  shop.sotish('olma', 5);
+  shop.qabul('uzum', 10);
+  shop.qoldiq();
+  
+
+//   RUN: npm run train
