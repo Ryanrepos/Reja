@@ -1,6 +1,7 @@
 console.log("Web serverni boshlash");
 
 const { log } = require("console");
+
 // 📌📌📌  EXPRESS  📌📌📌
 
 const express = require("express");
@@ -19,7 +20,7 @@ fs.readFile("database/user.json", "utf8", (err, data) => {
 });
 
 
-// MongoDB chaqirish..
+// 📌 MongoDB chaqirish..
 
 const db = require("./server").db()
 const mongodb = require("mongodb");
@@ -38,16 +39,6 @@ app.set("view engine", "ejs");   // ejs ni ishlatyabmz view engine sifatida.
 
 // 4: 📌 Routing code
 
-/*
-app.get("/hello", function(req, res){
-    res.end(`<h1 style = "background: red">HELLO WORLD by Ryan</h1>`); 
-});
-
-app.get("/gift", function(req, res){
-    res.end("<h1>siz sovg'alar bo'limidasiz</h1>"); 
-});
-*/
-
 app.post("/create-item", (req, res) => {
     console.log(req.body);
     console.log("user entered /create-item");
@@ -62,6 +53,18 @@ app.post("/create-item", (req, res) => {
 app.post("/delete-item", (req, res) => {
     const id = req.body.id;
     db.collection("plans").deleteOne({_id: new mongodb.ObjectId(id)}, function(err, data){
+        res.json({state: "success"});
+    }
+    );
+});
+
+app.post("/edit-item", (req, res) => {
+    const data = req.body;
+    console.log(data);
+    db.collection("plans").findOneAndUpdate(
+    {_id: new mongodb.ObjectId(data.id)},
+    {$set: {reja: data.new_input}}, 
+    function(err, data) {
         res.json({state: "success"});
     }
     );
