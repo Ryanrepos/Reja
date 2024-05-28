@@ -170,6 +170,9 @@ console.log(hisoblang("seund8j3b3"));  // Bu funksiyamiz 3 qaytaradi bu holatda
 
 */
 
+
+/*
+
 // 📌📌📌 MITASK-C
 
 class Shop {
@@ -221,3 +224,35 @@ class Shop {
   
 
 //   RUN: npm run train
+
+*/
+
+
+/*
+
+D-TASK: 
+
+Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+*/
+
+function hisoblang(stringA, stringB) {
+
+  if (stringA.length !== stringB.length) {
+    return false;
+  }
+
+  const a = stringA.toLowerCase();
+  const b = stringB.toLowerCase();
+
+  const sortedA = a.split("").sort().join("");
+  const sortedB = b.split("").sort().join("");
+
+  return sortedA === sortedB;
+
+}
+
+console.log(hisoblang("5000", "3000"));
+console.log(hisoblang("laptop", "potpal"));
+
+// RUN: npm run train
