@@ -236,6 +236,7 @@ Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala
 MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
 */
 
+/*
 function hisoblang(stringA, stringB) {
 
   if (stringA.length !== stringB.length) {
@@ -256,3 +257,17 @@ console.log(hisoblang("5000", "3000"));
 console.log(hisoblang("laptop", "potpal"));
 
 // RUN: npm run train
+
+*/
+
+// E-TASK: 
+
+// Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+// MASALAN: getReverse("hello") return qilsin "olleh"
+
+function ozgartirish(a){
+  return a.split("").reverse().join("");
+}
+
+console.log(ozgartirish("notebook"));
+console.log(ozgartirish("12345"));
