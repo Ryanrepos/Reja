@@ -15,7 +15,7 @@ mongodb.connect(connectionString, {useNewUrlParser: true, useUnifiedTopology: tr
 
     const app = require("./app");
     const server = http.createServer(app);
-    let PORT = 3000;
+    let PORT = 3071;
     server.listen(PORT, function(){
     console.log(`server is successfully running on port: ${PORT}, http://localhost:${PORT}`);
 })
