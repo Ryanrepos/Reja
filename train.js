@@ -265,9 +265,26 @@ console.log(hisoblang("laptop", "potpal"));
 // Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
 // MASALAN: getReverse("hello") return qilsin "olleh"
 
-function ozgartirish(a){
-  return a.split("").reverse().join("");
+// function ozgartirish(a){
+//   return a.split("").reverse().join("");
+// }
+
+// console.log(ozgartirish("notebook"));
+// console.log(ozgartirish("12345"));
+
+
+// Task F
+
+function findDup(str) {
+
+  const chars = str.split('');
+  
+  const uniqueChars = new Set(chars);
+  
+  return uniqueChars.size < chars.length;
 }
 
-console.log(ozgartirish("notebook"));
-console.log(ozgartirish("12345"));
+console.log(findDup('Ryan')); 
+console.log(findDup('Javascript')); 
+console.log(findDup('1231')); 
+
