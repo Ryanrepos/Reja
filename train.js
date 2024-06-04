@@ -275,16 +275,32 @@ console.log(hisoblang("laptop", "potpal"));
 
 // Task F
 
-function findDup(str) {
+// function findDup(str) {
 
-  const chars = str.split('');
+//   const chars = str.split('');
   
-  const uniqueChars = new Set(chars);
+//   const uniqueChars = new Set(chars);
   
-  return uniqueChars.size < chars.length;
+//   return uniqueChars.size < chars.length;
+// }
+
+// console.log(findDup('Ryan')); 
+// console.log(findDup('Javascript')); 
+// console.log(findDup('1231')); 
+
+
+// Task G
+
+function findHighIndex(a) {
+  
+  const mVal = Math.max(...a);
+  const firstIndex = a.indexOf(mVal);
+
+  return firstIndex;
+
 }
 
-console.log(findDup('Ryan')); 
-console.log(findDup('Javascript')); 
-console.log(findDup('1231')); 
+const arr1 = [7, 77, 45, 89, 98, 12, 46, 37, 42]; // buyerda 98 ni qaytaradi, 4-index da joylashgan
+const highIndex = findHighIndex(arr1);
 
+console.log(highIndex);
