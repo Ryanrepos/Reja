@@ -291,16 +291,17 @@ console.log(hisoblang("laptop", "potpal"));
 
 // Task G
 
-function findHighIndex(a) {
+// function findHighIndex(a) {
   
-  const mVal = Math.max(...a);
-  const firstIndex = a.indexOf(mVal);
+//   const mVal = Math.max(...a);
+//   const firstIndex = a.indexOf(mVal);
 
-  return firstIndex;
+//   return firstIndex;
 
-}
+// }
 
-const arr1 = [7, 77, 45, 89, 98, 12, 46, 37, 42]; // buyerda 98 ni qaytaradi, 4-index da joylashgan
-const highIndex = findHighIndex(arr1);
+// const arr1 = [7, 77, 45, 89, 98, 12, 46, 37, 42]; // buyerda 98 ni qaytaradi, 4-index da joylashgan
+// const highIndex = findHighIndex(arr1);
 
-console.log(highIndex);
+// console.log(highIndex);
+
